@@ -11,6 +11,7 @@ app.use((req, res, next) => {
 });
 app.use((req, res, next) => {
   console.log('Second middleware');
+  res.send('<h1>Express Sent this message</h1>')
 });
 
 const server = http.createServer(app);
