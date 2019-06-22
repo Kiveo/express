@@ -5,13 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Products</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    .main-header {
+      width: 100%;
+      height: 4rem;
+      background: rgb(241, 100, 157);
+    }
+
+    .main-header__nav {
+      padding: 0 1.5rem;
+      height: 100%;
+      display: flex;
+    }
+
+    .main-header__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .main-header__listing {
+      height: 100%;
+    }
+    .main-header__listing:first-of-type {
+      border-right: 2px dashed rgb(255, 200, 230);
+      border-top-right-radius: 20%;
+      border-bottom-right-radius: 20%;
+    }
+
+    .main-header__listing a {
+      font-size: 2em;
+      text-decoration: none;
+      color: white;
+      background: rgb(241, 100, 157);
+      display: inline-block;
+      height: 100%;
+      /* LH should be same as total +/- font-size to align center text */
+      line-height: 2em;
+      padding: 0 1rem;
+    }
+
+    .main-header__listing a:hover {
+      color: rgb(241, 100, 157);
+      background: #FFCBE2;
+    }
+
+
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="/">Shop</a></li>
-        <li><a href="/admin/add-product">Add Product</a></li>
+  <header class="main-header">
+    <nav class="main-header__nav">
+      <ul class="main-header__list">
+        <li class="main-header__listing"><a href="/">Shop</a></li>
+        <li class="main-header__listing"><a href="/admin/add-product">Add Product</a></li>
       </ul>
     </nav>
   </header>
