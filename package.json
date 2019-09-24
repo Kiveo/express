@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Kiveo/express#readme",
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.2"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
