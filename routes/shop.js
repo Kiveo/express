@@ -5,7 +5,6 @@ const router = express.Router();
 const rootDir = require('../utils/path');
 
 router.get('/', (req, res, next) => {
-  console.log('Root Catcher MW');
   res.sendFile(path.join(rootDir, 'views', 'shop.html'))
 });
 
