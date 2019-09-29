@@ -16,10 +16,7 @@ main {
   /* height minus main-header(nav) size */
   height: calc(100vh - 4rem);
   min-height: 40vh;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
 }
 
 .main-header {
@@ -61,9 +58,9 @@ main {
   border: 2px solid transparent;
 }
 
-.main-header__listing a:hover {
-  color: #0078D6;
-  border-bottom: 2px solid turquoise;
+.main-header__listing a.active {
+  color: whitesmoke;
+  border-bottom: 2px solid purple;
 }
 
 .main-header__listing a:hover {
@@ -72,8 +69,12 @@ main {
 }
 
 .form-control {
-  margin: 1rem 0;
-  background: rgba(0, 0, 0, 0.4);
+  margin: auto;
+  padding: 1rem;
+}
+
+.form-control label {
+  padding: 0.5rem;
 }
 
 .form-control label,
@@ -136,4 +137,13 @@ button:active {
 }
 .card ul li {
   padding: 0.5rem;
+}
+
+#not-found {
+  display: block;
+  position: absolute;
+  margin: 0 auto; 
+  top: 25vh;
+  left: 0;
+  right: 0;
 }
