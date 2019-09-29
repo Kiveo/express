@@ -7,11 +7,11 @@ const adminData = require('./admin');
 
 router.get('/', (req, res, next) => {
   const productList = adminData.products || [];
+  // render('viewName', object.values available to view)
   res.render('shop', {
     pageTitle: 'Shop',
     products: productList,
     hasProducts: productList.length > 0,
-    activeShop: true,
     path: '/',
   });
 });
