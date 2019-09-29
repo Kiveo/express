@@ -13,7 +13,8 @@ main {
   width: 100%;
   color: deeppink;
   margin: 0 auto;
-  height: 100vh;
+  /* height minus main-header(nav) size */
+  height: calc(100vh - 4rem);
   min-height: 40vh;
   display: flex; 
   justify-content: center;
@@ -21,19 +22,10 @@ main {
   flex-direction: column;
 }
 
-.card ul {
-  list-style-type: decimal-leading-zero;
-  list-style-position: inside;
-  padding: 0;
-}
-.card ul li {
-  padding: 0.5rem;
-}
-
 .main-header {
   width: 100%;
+  padding-top: 0.5rem;
   height: 4rem;
-  position: absolute;
 }
 
 .main-header__nav {
@@ -62,10 +54,10 @@ main {
   display: flex;
   align-items: center;
   height: 100%;
-  font-size: 1.5em;
+  font-size: 1.25em;
   text-decoration: none;
   color: #E636DA;
-  padding: 0 1rem;
+  padding: 1rem;
   border: 2px solid transparent;
 }
 
@@ -82,7 +74,6 @@ main {
 .form-control {
   margin: 1rem 0;
   background: rgba(0, 0, 0, 0.4);
-  padding: 1rem;
 }
 
 .form-control label,
@@ -136,4 +127,13 @@ button:hover,
 button:active {
   background: #26D5F1;
   color: #380B48;
+}
+
+.card ul {
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside;
+  padding: 0;
+}
+.card ul li {
+  padding: 0.5rem;
 }
