@@ -12,10 +12,7 @@ main {
   box-sizing: border-box;
   width: 100%;
   color: deeppink;
-  margin: 0 auto;
-  /* height minus main-header(nav) size */
-  height: calc(100vh - 4rem);
-  min-height: 40vh;
+  margin: 10vh auto;
   text-align: center;
 }
 
