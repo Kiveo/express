@@ -128,11 +128,12 @@ button:active {
 }
 
 .card ul {
+  display: inline-block;
   list-style-type: decimal-leading-zero;
-  list-style-position: inside;
-  padding: 0;
+  text-align: center;
 }
 .card ul li {
+  text-align: justify;
   padding: 0.5rem;
 }
 

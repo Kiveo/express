@@ -3,7 +3,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const app = express();
 // routes // 
-const adminData = require('./routes/admin');
+const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
 const notFoundRoute = require('./routes/not-found');
 
@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: false })); // form parser
 app.use(express.static(path.join(__dirname, 'public'))); // serve static read access
 
 app.use(shopRoutes);
-app.use('/admin', adminData.routes);
+app.use('/admin', adminRoutes);
 app.use(notFoundRoute);
 
 app.listen(3000);
