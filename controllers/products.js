@@ -15,11 +15,11 @@ exports.postAddProduct = (req, res, next) => {
 }
 
 exports.getProducts = (req, res, next) => {
-  Product.fetchAll(products => {
+  Product.fetchAll(productList => {
     res.render('shop', {
       pageTitle: 'Shop',
-      products: products,
-      hasProducts: products.length > 0,
+      products: productList,
+      hasProducts: productList.length > 0,
       path: '/',
     });
   });
