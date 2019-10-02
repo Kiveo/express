@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const adminController = require('../controllers/products');
+const adminController = require('../controllers/admin');
 
 // implicit /admin/ from app.js
 router.get('/add-product', adminController.getAddProduct);
