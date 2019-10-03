@@ -5,12 +5,17 @@
   <%- include('../includes/navigation') %>
 
   <main>
-    <p>ADMIN PRODUCTS</p>
+    <p>PRODUCTS</p>
     <% if (products.length > 0) { %>
     <div class="card">
       <ul>
         <% products.forEach((product) => { %>
-        <li><%= product.title %></li>
+        <li>
+          <p>Title: <%= product.title %></p>
+          <img src='<%= product.imageUrl %>' alt="<%= product.title %>" />
+          <p>Price: $<%= product.price %></p>
+          <p>Description: <%= product.description %></p>
+        </li>
         <% }) %>
       </ul>
     </div>
