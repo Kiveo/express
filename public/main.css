@@ -115,11 +115,7 @@ main {
 }
 
 .buttons--admin { 
-  margin-bottom: 2rem;
-}
-
-.buttons--admin:last-of-type { 
-  margin-bottom: 0;
+  padding: 0 1rem;
 }
 
 button {
@@ -161,12 +157,13 @@ button:active {
   flex-direction: column;
   /* justify-content: center; */
   align-items: flex-start;
-  color: hotpink; 
+  color: whitesmoke;
   background: #190B36;
+  background-image: linear-gradient(palevioletred, indigo);
   border-radius: 3px;
   margin: 1rem auto 0.5rem auto;
-  max-width: 600px;
-  padding: 2rem;
+  max-width: 400px;
+  padding: 0 0 1rem 0rem;
   width: 90vw;
 }
 
@@ -174,12 +171,13 @@ button:active {
   color: turquoise;
 } 
 .card--admin img {
-  padding: 1rem 0;
+  padding: 0;
   width: 100%;
   max-width: 100%;
   max-height: 200px;
 } 
 .card--admin p {
+  padding: 0 1rem;
   text-align: initial;
 } 
 
