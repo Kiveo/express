@@ -133,6 +133,7 @@ button:active {
   color: #380B48;
 }
 
+
 .card ul {
   display: inline-block;
   list-style-type: decimal-leading-zero;
@@ -142,10 +143,37 @@ button:active {
   text-align: justify;
   padding: 0.5rem;
 }
-.card ul li img {
+.card img {
   max-height: 100px;
   max-width: 100px;
 }
+
+.card--admin {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: flex-start;
+  color: hotpink; 
+  background: #190B36;
+  border-radius: 3px;
+  margin: 1rem auto;
+  max-width: 600px;
+  padding: 2rem;
+  width: 90vw;
+}
+
+.card--admin-label {
+  color: turquoise;
+} 
+.card--admin img {
+  padding: 1rem 0;
+  width: 100%;
+  max-width: 100%;
+  max-height: 200px;
+} 
+.card--admin p {
+  text-align: initial;
+} 
 
 #not-found {
   display: block;

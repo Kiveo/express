@@ -5,20 +5,18 @@
   <%- include('../includes/navigation') %>
 
   <main>
-    <p>PRODUCTS</p>
+    <p>ADMIN PRODUCTS</p>
     <% if (products.length > 0) { %>
-    <div class="card">
-      <ul>
-        <% products.forEach((product) => { %>
-        <li>
-          <p>Title: <%= product.title %></p>
-          <img src='<%= product.imageUrl %>' alt="<%= product.title %>" />
-          <p>Price: $<%= product.price %></p>
-          <p>Description: <%= product.description %></p>
-        </li>
-        <% }) %>
-      </ul>
+
+    <% products.forEach((product) => { %>
+    <div class="card card--admin">
+      <p><span class="card--admin-label">Title:</span> <%= product.title %></p>
+      <img src='<%= product.imageUrl %>' alt="<%= product.title %>" />
+      <p><span class="card--admin-label">Price:</span> $<%= product.price %></p>
+      <p><span class="card--admin-label">Description:</span> <%= product.description %></p>
     </div>
+    <% }) %>
+
     <% } else { %>
     <h1>No products registered</h1>
     <% } %>
