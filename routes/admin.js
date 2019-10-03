@@ -7,8 +7,9 @@ const adminController = require('../controllers/admin');
 router.get('/add-product', adminController.getAddProduct);
 
 // implicit /admin/ from app.js
-router.get('/products');
+router.get('/products', adminController.getProducts);
 
+// implicit /admin/ from app.js
 router.post('/add-product', adminController.postAddProduct);
 
 module.exports = router;
