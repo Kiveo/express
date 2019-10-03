@@ -114,6 +114,14 @@ main {
   border: 2px solid turquoise;
 }
 
+.buttons--admin { 
+  margin-bottom: 2rem;
+}
+
+.buttons--admin:last-of-type { 
+  margin-bottom: 0;
+}
+
 button {
   font: inherit;
   padding: 0.5rem;
@@ -156,7 +164,7 @@ button:active {
   color: hotpink; 
   background: #190B36;
   border-radius: 3px;
-  margin: 1rem auto;
+  margin: 1rem auto 0.5rem auto;
   max-width: 600px;
   padding: 2rem;
   width: 90vw;
